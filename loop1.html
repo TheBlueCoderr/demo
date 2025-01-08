@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=4;
+        for(let row=1;row<=n;row++)
+            {
+                for(let col=1;col<=4;col++)
+            {
+                document.write("*");
+            }
+            document.write('<br>');
+            }
+        
+    </script>
+    <script>
+        document.write('<br>');
+        let m=4;
+        for(let row=1;row<=m;row++)
+    {   
+        for(let col=1;col<=m;col++)
+    {
+        if(col>=1 && col<=n-row)
+    {
+        document.write(" &nbsp;&nbsp");
+    }
+    else{
+        document.write("*");
+    }
+    }
+    document.write('<br>');
+    }
+
+    </script>
+    <script>
+        document.write('<br>');
+        let s=4;
+        for(let row=1;row<=s;row++)
+    {   
+        for(let col=1;col<=s;col++)
+    {
+        if(col>=1 && col<=s-row+1)
+    {
+        document.write("*");
+    }
+    else{
+        document.write("&nbsp;&nbsp");
+    }
+    }
+    document.write('<br>');
+    }
+    </script>
+    <script>
+        document.write('<br>');
+        let p=5;
+       
+        for(let row=1;row<=p;row++)
+    {   
+        for(let col=1;col<=2*p-1;col++)
+    {
+        if(col>=1 && col<=p-row)
+    {
+        document.write("&nbsp;&nbsp");
+    }
+    else if(col>=p-row+1 && col<=p+row-1)
+    {
+        document.write("*");
+    }
+    else{
+        document.write("&nbsp;&nbsp");
+    }
+    }
+    document.write('<br>');
+    }
+    </script>
+    <script>
+         document.write('<br>');
+         let x=5;
+         for(let i=1;i<=x;x++)
+         {
+           
+            for(let j=1;j<=x;j++)
+         {
+            if(i==1 || i==x)
+         {
+            document.write("*");
+         }
+         else if(j=n-r+1 )
+         {
+            document.write("*");
+         }
+         }
+         }
+    </script>
+</body>
+</html>
